@@ -13,6 +13,9 @@ class NoticiaSeeder extends Seeder
      */
     public function run()
     {
-        //
+        ini_set('memory_limit', '512M');
+        \App\Models\Noticia::factory(1000)->create();
     }
 }
+
+?>
